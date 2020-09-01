@@ -39,12 +39,13 @@ function show(num){
 
 function solve(){
     var eq = document.getElementById("disp").value;
-    if (!eq.includes('#')){
-        var ans = eval(eq)
+    try{
+        var ans = eval(eq);
         document.getElementById("disp").value = ans;
-    }
-    else{
-        alert("Invalid character detected!");
-        document.getElementById("disp").value = "";
+    } catch (bad) {
+        if (bad instanceof SyntaxError){
+            alert("Invalid Character(s) Detected!");
+            document.getElementById("disp").value = "";
+        }
     }
 }
