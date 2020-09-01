@@ -36,3 +36,15 @@ $("#addCont").click(function() { // when "button_id" is clicked
 function show(num){
     document.getElementById("disp").value+=num
 }
+
+function solve(){
+    var eq = document.getElementById("disp").value;
+    if (!eq.includes('#')){
+        var ans = eval(eq)
+        document.getElementById("disp").value = ans;
+    }
+    else{
+        alert("Invalid character detected!");
+        document.getElementById("disp").value = "";
+    }
+}
