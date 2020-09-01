@@ -1,0 +1,58 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#tab_bar{
+    background-color: grey;
+    height: 28px;
+}
+
+#content{
+    margin:15px;
+}
+
+#disp{
+    width:310px;
+}
+
+.phoneButton {
+    width: 100px;
+}
+
+.bottomBut{
+    width: 152px;
+}
+
+.addContBoxes{
+    width:15%;
+}
+
+.tabButton{
+    background-color: lightgray;
+    cursor: pointer;
+    width:15%;
+    margin:10px;
+    border:none;
+    border-radius: 2px;
+    transition-duration: 0.5s;
+}
+
+.tabButton:hover{
+    background-color:rgb(158, 158, 158);
+}
+
+#clear{
+    background-color: red;
+    color: white;
+    transition-duration: .3s;
+    border:none;
+}
+
+#clear:hover{
+    background-color: white;
+    color: red;
+    border-style: solid; 
+}
+
