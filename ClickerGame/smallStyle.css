@@ -23,10 +23,14 @@ img{
     text-align: center;
 }
 
-#mob{
+@media only screen
+and (max-width : 320px){
+    #mob{
     display: inline-block;
-}
+    }
 
-#desk{
-    display: none;
+    #desk{
+        display: none;
+    }
+    
 }
