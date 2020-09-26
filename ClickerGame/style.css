@@ -27,8 +27,8 @@ and (max-device-width : 480px){
         margin-left: auto;
     }
     
-    .button{
-        font-size:20px;
+    button{
+        font-size:30px;
     }
     
     .mob{
