@@ -1,0 +1,27 @@
+/* https://www.tutorialrepublic.com/codelab.php?topic=faq&file=css-image-swap-on-hover */
+/* https://stackoverflow.com/questions/18563582/overlap-images-in-center-css/18563662 */
+
+body{
+    background-color: rgb(156, 223, 250);
+}
+
+img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 70px;
+    padding: 20px;
+}
+
+.play {
+        position: relative;
+        display: inline-block;
+        margin-left: 20%;
+    }
+    .play .img_top {
+        display: none;
+        position: absolute;
+    }
+
+.text{
+    text-align: center;
+}
