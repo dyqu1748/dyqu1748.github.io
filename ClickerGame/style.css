@@ -2,13 +2,6 @@ body{
     background-color: rgb(156, 223, 250);
 }
 
-img{
-    max-width: 80%;
-    height: auto;
-    border-radius: 70px;
-    padding: 20px;
-}
-
 .play {
         position: relative;
         display: inline-block;
@@ -41,4 +34,21 @@ and (max-device-width : 480px){
         display: none;
     }
     
+}
+
+@media only screen  and (min-width : 1224px) {
+    img{
+        max-width: 80%;
+        height: auto;
+        border-radius: 70px;
+        padding: 20px;
+    }
+    
+    .mob{
+    display: none;
+    }
+
+    .desk{
+        display: inline-block;
+    }
 }
