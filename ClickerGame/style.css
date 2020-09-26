@@ -27,6 +27,10 @@ and (max-device-width : 480px){
         margin-left: auto;
     }
     
+    .button{
+        font-size:2vw
+    }
+    
     .mob{
     display: inline-block;
     }
