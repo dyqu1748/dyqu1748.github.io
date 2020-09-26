@@ -50,9 +50,9 @@ function nope(){
 }
 
 (function() {
-
-	var startListen = document.getElementById('startListen');
-
+	
+    var startListen = document.getElementById('startListen');
+    var startListen = document.getElementById('startListenMob');
     rec = new webkitSpeechRecognition();
     rec.continuous = true;
     rec.interimResults = false;
@@ -86,6 +86,7 @@ function nope(){
 
     // Listens to when user enables voice recognition 
     startListen.addEventListener('click', startPoke, false);
+    startListenMob.addEventListener('click', startPoke, false);
 
 	
 })();
