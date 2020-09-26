@@ -6,6 +6,8 @@
 //Sound effect to play
 var sfx =  document.getElementById("myAudio");
 var bgm = document.getElementById("bgm");
+var startListen = document.getElementById('startListen');
+var startListen = document.getElementById('startListenMob');
 var playingBGM = false;
 
 //Keyboard input (using spacebar)
@@ -51,8 +53,6 @@ function nope(){
 
 (function() {
 	
-    var startListen = document.getElementById('startListen');
-    var startListen = document.getElementById('startListenMob');
     rec = new webkitSpeechRecognition();
     rec.continuous = true;
     rec.interimResults = false;
