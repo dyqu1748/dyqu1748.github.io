@@ -25,3 +25,11 @@ img{
 .text{
     text-align: center;
 }
+
+#mob{
+    display: none;
+}
+
+#desk{
+    display: inline-block;
+}

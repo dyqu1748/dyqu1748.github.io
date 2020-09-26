@@ -12,7 +12,7 @@ img{
 .play {
         position: relative;
         display: inline-block;
-        margin-left: 20%;
+        margin-left: auto;
     }
     .play .img_top {
         display: none;
@@ -21,4 +21,12 @@ img{
 
 .text{
     text-align: center;
+}
+
+#mob{
+    display: inline-block;
+}
+
+#desk{
+    display: none;
 }
