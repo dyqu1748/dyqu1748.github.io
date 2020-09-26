@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallStyle.css" />
-    <link rel="stylesheet" media = "screen and (min-width: 600px)" href="largeStyle.css">
+<!--     <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallStyle.css" /> -->
+    <link rel="stylesheet" href="largeStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dylan's Clicker Game!</title>
 </head>
@@ -28,8 +28,8 @@
 </div>
 
 <div class = "play">
-    <a id="target" href="#" class="img_top"><img src="pokeAfter.jpg" alt="https://funnyjunk.com/channel/animemanga/Poke+your+platelets/tlqzLgy/" onmouseup="nope()"></a>
-    <img id = "front" src="pokeBefore.jpg" alt = "https://funnyjunk.com/channel/animemanga/Poke+your+platelets/tlqzLgy/" onmousedown="poke()">
+    <a id="target" href="#" class="img_top"><img src="pokeAfter.jpg" alt="https://funnyjunk.com/channel/animemanga/Poke+your+platelets/tlqzLgy/" onmouseup="nope()" ontouchend="nope()"></a>
+    <img id = "front" src="pokeBefore.jpg" alt = "https://funnyjunk.com/channel/animemanga/Poke+your+platelets/tlqzLgy/" onmousedown="poke()" ontouchstart="poke()">
 </div>
 <script src="logic.js"></script>
 </body>
