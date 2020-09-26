@@ -7,7 +7,7 @@
 var sfx =  document.getElementById("myAudio");
 var bgm = document.getElementById("bgm");
 var startListen = document.getElementById('startListen');
-var startListen = document.getElementById('startListenMob');
+var startListenMob = document.getElementById('startListenMob');
 var playingBGM = false;
 
 //Keyboard input (using spacebar)
