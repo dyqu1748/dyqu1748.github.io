@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(156, 223, 250);
+}
+
+img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 60px;
+    padding: 10px;
+}
+
+.play {
+        position: relative;
+        display: inline-block;
+        margin-left: 20%;
+    }
+    .play .img_top {
+        display: none;
+        position: absolute;
+    }
+
+.text{
+    text-align: center;
+}
