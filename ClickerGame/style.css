@@ -2,15 +2,10 @@ body{
     background-color: rgb(156, 223, 250);
 }
 
-.play {
-        position: relative;
-        display: inline-block;
-        margin-left: auto;
-    }
-    .play .img_top {
-        display: none;
-        position: absolute;
-    }
+.play .img_top {
+    display: none;
+    position: absolute;
+}
 
 .text{
     text-align: center;
@@ -24,6 +19,12 @@ and (max-device-width : 480px){
         height: auto;
         border-radius: 60px;
         padding: 10px;
+    }
+    
+    .play {
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
     }
     
     .mob{
@@ -42,6 +43,12 @@ and (max-device-width : 480px){
         height: auto;
         border-radius: 70px;
         padding: 20px;
+    }
+    
+    .play {
+        position: relative;
+        display: inline-block;
+        margin-left: 20%;
     }
     
     .mob{
