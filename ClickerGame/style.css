@@ -81,4 +81,9 @@ and (max-device-width : 480px){
     p,#counterText,#counter{
         font-size: 24px;
     }
+    
+    button{
+        font-size: 24px;
+        padding: 20px 40px;
+    }
 }
