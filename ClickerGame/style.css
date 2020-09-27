@@ -40,7 +40,7 @@ and (max-device-width : 480px){
     }
     
     h1{
-        font-size: 50px;
+        font-size: 10vw;
     }
     
     p,#counterText,#counter{
