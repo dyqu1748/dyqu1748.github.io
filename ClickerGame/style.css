@@ -85,8 +85,8 @@ and (max-device-width : 480px){
     }
     
     button{
-        font-size: 24px;
-        padding: 10px 20px;
+        font-size: 20px;
+        padding: 5px 10px;
         border-radius: 12px;
     }
 }
