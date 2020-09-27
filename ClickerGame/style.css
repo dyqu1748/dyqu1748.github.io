@@ -44,8 +44,12 @@ and (max-device-width : 480px){
         font-size: 50px;
     }
     
-    p,#counterText,#counter{
+    #counterText,#counter{
         font-size: 30px;
+    }
+    
+    p{
+        font-size:30px;
     }
     
     .mob{
