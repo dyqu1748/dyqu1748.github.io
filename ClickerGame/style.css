@@ -67,7 +67,7 @@ and (max-device-width : 480px){
     .play {
         position: relative;
         display: inline-block;
-        margin: 0 auto;
+        margin-left: 25%;
     }
     
     .mob{
