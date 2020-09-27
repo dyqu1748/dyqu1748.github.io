@@ -79,7 +79,7 @@ function nope(){
     };
 	
     rec.onaudioend = function(){
-    	document.getElementById("listening").innerHTML = 'Not currently poking with voice.';
+    	document.getElementById("listeningMob").innerHTML = 'Not currently poking with voice.';
     };
 
     // Start speech recognition, for some reason if I put start in the function above the sound effect doesn't play.
