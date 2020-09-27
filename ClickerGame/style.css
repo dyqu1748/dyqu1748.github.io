@@ -80,7 +80,7 @@ and (max-device-width : 480px){
         display: inline-block;
     }
     
-    p,#counterText,#counter{
+    p{
         font-size: 1vw;
     }
     
