@@ -38,6 +38,8 @@ and (max-device-width : 480px){
         justify-content: center;
         align-items: center;
         font-size: 50px;
+        background-color: red;
+        color: white;
     }
     
     h1{
