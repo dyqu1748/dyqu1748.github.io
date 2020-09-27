@@ -1,6 +1,7 @@
 body{
     background-color: rgb(156, 223, 250);
     font-family: Helvetica;
+    touch-action: manipulation;
 }
 
 .play .img_top {
