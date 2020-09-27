@@ -9,22 +9,23 @@
 
 <!-- https://stackoverflow.com/questions/12953928/immediate-play-sound-on-button-click-in-html-page -->
 <audio id="myAudio">
-    <source src="sfxShort.mp3" type="audio/mpeg" alt = "https://www.youtube.com/watch?v=d9KwfTO_cPY">
+    <!--https://www.youtube.com/watch?v=Oaf2gUhy74o&t=53s      -->
+    <source src="sfxShort.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>   
 
 <audio id="bgm">
-    <source src="bgm.mp3" type="audio/mpeg" alt = "https://www.youtube.com/watch?v=Oaf2gUhy74o&t=53s">
+<!--     https://www.youtube.com/watch?v=Oaf2gUhy74o&t=53s -->
+    <source src="bgm.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>   
     
 <header>
-    <h1>Poke me!</h1>
+    <h1 class = "text">Poke me!</h1>
 </header>
 
 <main>
     <div class="text">
-        <h1>Poke me!</h1>
         <p>You can poke her cheek by either clicking it, pressing down on the spacebar, or saying "Poke!" Give it a try!</p>
         <button id="startListen" class="desk">Poke With My Voice!</button>
         <h2 id="listening" class="desk">Not currently poking with voice.</h2>
@@ -32,8 +33,9 @@
     </div>
 
     <div class = "play">
-        <a id="target" href="#" class="img_top"><img src="pokeAfter.jpg" alt="https://funnyjunk.com/channel/animemanga/Poke+your+platelets/tlqzLgy/" onmouseup="nope()" ontouchend="nope()"></a>
-        <img id = "front" src="pokeBefore.jpg" alt = "https://funnyjunk.com/channel/animemanga/Poke+your+platelets/tlqzLgy/" onmousedown="poke()" ontouchstart="poke()">
+<!--         https://funnyjunk.com/channel/animemanga/Poke+your+platelets/tlqzLgy/ -->
+        <a id="target" href="#" class="img_top"><img src="pokeAfter.jpg" alt="Picture of a cute anime girl getting poked in the cheek." onmouseup="nope()" ontouchend="nope()"></a>
+        <img id = "front" src="pokeBefore.jpg" alt = "Picture of a cute anime girl" onmousedown="poke()" ontouchstart="poke()">
     </div>
 
     <div class="mob">
