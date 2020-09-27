@@ -12,23 +12,23 @@ var playingBGM = false;
 
 //Keyboard input (using spacebar)
 document.onkeydown = function (e) {
-    if (playingBGM == false){
-        bgm.play();
-        bgm.loop = true;
-        playingBGM = true;
-    }
     if (e.code == "Space"){
+	if (playingBGM == false){
+	    bgm.play();
+	    bgm.loop = true;
+	    playingBGM = true;
+	}
         document.getElementById("target").style.display = "inline";
         sfx.play();
         sfx.currentTime=0;
-        var count = document.getElementById("counter").innerHTML;
-        count++;
-        document.getElementById("counter").innerHTML = count; 
     }
 };
 document.onkeyup = function (e) {
     if (e.code == "Space"){
         document.getElementById("target").style.display = "none";
+	var count = document.getElementById("counter").innerHTML;
+        count++;
+        document.getElementById("counter").innerHTML = count; 
     }
 };
 
