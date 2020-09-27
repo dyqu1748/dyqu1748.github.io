@@ -30,6 +30,8 @@ and (max-device-width : 480px){
     button{
         font-size:50px;
         padding: 14px 40px;
+        margin: 0 auto;
+        display: block;
     }
     
     .mob{
