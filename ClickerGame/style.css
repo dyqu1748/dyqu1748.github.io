@@ -30,8 +30,8 @@ and (max-device-width : 480px){
     
     button{
         text-align: center;
-        width: 149px;
-        height: 149px;
+        width: 200px;
+        height: 200px;
         border-radius: 100%;
         display: inline-flex;
         flex-direction: column;
