@@ -29,11 +29,16 @@ and (max-device-width : 480px){
     }
     
     button{
-        font-size:50px;
-        padding: 20px 40px;
-        margin: 0 auto;
-        display: block;
-        border-radius: 50%;
+        text-align: center;
+        width: 149px;
+        height: 149px;
+        border-radius: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: bold;
     }
     
     p,#counterText,#counter{
