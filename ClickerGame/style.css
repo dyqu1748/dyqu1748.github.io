@@ -45,7 +45,7 @@ and (max-device-width : 480px){
     }
     
     p,#counterText,#counter{
-        font-size: 32px;
+        font-size: 30px;
     }
     
     .mob{
