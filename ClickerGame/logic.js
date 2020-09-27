@@ -80,17 +80,22 @@ function nope(){
 	
     rec.onaudioend = function(){
     	document.getElementById("listening").innerHTML = 'Not currently poking with voice.';
-    }
+    };
 
     // Start speech recognition, for some reason if I put start in the function above the sound effect doesn't play.
     var startPoke= function() {
         rec.start();
         document.getElementById("listening").innerHTML = 'Now poking with voice!';
     }
+    
+    var startPokeMob= function() {
+        rec.start();
+        document.getElementById("listeningMob").innerHTML = 'Now poking with voice!';
+    }
 
     // Listens to when user enables voice recognition 
     startListen.addEventListener('click', startPoke, false);
-    startListenMob.addEventListener('click', startPoke, false);
+    startListenMob.addEventListener('click', startPokeMob, false);
 
 	
 })();
