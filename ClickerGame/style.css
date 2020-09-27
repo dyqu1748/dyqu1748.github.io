@@ -31,11 +31,10 @@ and (max-device-width : 480px){
 /*https://stackoverflow.com/questions/39278076/centering-text-on-circle-button  */
     button{
         text-align: center;
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
         border-radius: 100%;
         display: inline-flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         font-size: 50px;
