@@ -32,7 +32,8 @@ and (max-device-width : 480px){
     }
     
     .mob{
-    display: inline-block;
+        display: inline-block;
+        justify-content: center;
     }
 
     .desk{
