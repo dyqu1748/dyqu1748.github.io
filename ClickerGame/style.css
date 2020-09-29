@@ -17,7 +17,7 @@ body{
 }
 
 progress{
-    width:100%;
+    width:auto;
 }
 
 @media only screen
