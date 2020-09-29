@@ -49,7 +49,7 @@ and (max-device-width : 480px){
     
 /*Note: the text for mobile users at the bottom of the page appears to be a smaller font size for some reason.*/
     p,#counterText,#counter,label{
-        font-size: 2vw;
+        font-size: 3vw;
     }
     
     .mob{
@@ -86,7 +86,7 @@ and (max-device-width : 480px){
     }
     
     p,label{
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
     
     button{
