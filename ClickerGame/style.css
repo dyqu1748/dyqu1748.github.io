@@ -18,9 +18,6 @@ body{
 
 progress{
     width:100%;
-    border-radius:20px;
-    background: none;
-    backgrond-color: green;
 }
 
 @media only screen
