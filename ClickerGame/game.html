@@ -27,7 +27,7 @@
 <main>
     <div class="text">
         <p>You can poke her cheek by either clicking it, pressing down on the spacebar, or saying "Poke!" Give it a try!</p>
-        <button id="startListen" class="desk" title="Enable voice control for the game.">Poke With My Voice!</button>
+        <button id="startListen" class="desk" type="button" title="Enable voice control for the game.">Poke With My Voice!</button>
         <h2 id="listening" class="desk">Not currently poking with voice.</h2>
         <h2 id="counterText">Times Poked: <div id="counter">0</div></h2>
     </div>
@@ -43,6 +43,13 @@
         <h2 id="listeningMob">Not currently poking with voice.</h2>
         <button id="startListenMob" title="Enable voice control for the game.">Poke With My Voice!</button>
     </div>
+    
+    <div>
+        <h2>Volume Controls</h2>
+        <button onclick="volDown()" type="button" title="Turn the volume down.">Volume Down</button>
+        <button onclick="volUp()" type="button" title="Turn the volume up.">Volume Up</button>
+    </div>
+    
 </main>
     
 <script src="logic.js"></script>
