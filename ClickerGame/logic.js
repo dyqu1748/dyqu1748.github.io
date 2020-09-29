@@ -13,6 +13,7 @@ var playingBGM = false;
 //Keyboard input (using spacebar)
 document.onkeydown = function (e) {
     if (e.code == "Space"){
+    	e.preventDefault();
 	poke();
     }
 };
