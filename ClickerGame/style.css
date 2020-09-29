@@ -16,6 +16,10 @@ body{
     text-align: center;
 }
 
+progress{
+    width:auto;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px){
@@ -86,7 +90,7 @@ and (max-device-width : 480px){
     }
     
     p,label{
-        font-size: 1.5vw;
+        font-size: 1.25vw;
     }
     
     button{
