@@ -48,8 +48,8 @@ and (max-device-width : 480px){
     }
     
 /*Note: the text for mobile users at the bottom of the page appears to be a smaller font size for some reason.*/
-    p,#counterText,#counter{
-        font-size: 3vw;
+    p,#counterText,#counter,label{
+        font-size: 2vw;
     }
     
     .mob{
@@ -85,7 +85,7 @@ and (max-device-width : 480px){
         display: inline-block;
     }
     
-    p{
+    p,label{
         font-size: 1vw;
     }
     
