@@ -38,9 +38,6 @@ and (max-device-width : 480px){
         justify-content: center;
         align-items: center;
         font-size: 50px;
-        background-color: red;
-        color: white;
-        box-shadow: 0px 6px 0px $red;
     }
     
     h1{
@@ -93,8 +90,5 @@ and (max-device-width : 480px){
         font-size: 20px;
         padding: 5px 10px;
         border-radius: 12px;
-        color: white;
-        background-color:red;
-        box-shadow: 0px 6px 0px $red;
     }
 }
