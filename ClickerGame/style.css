@@ -16,10 +16,6 @@ body{
     text-align: center;
 }
 
-progress{
-    width:20%;
-}
-
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px){
@@ -54,6 +50,10 @@ and (max-device-width : 480px){
 /*Note: the text for mobile users at the bottom of the page appears to be a smaller font size for some reason.*/
     p,#counterText,#counter,label{
         font-size: 3vw;
+    }
+    
+    progress{
+        width:30%;
     }
     
     .mob{
@@ -91,6 +91,10 @@ and (max-device-width : 480px){
     
     p,label{
         font-size: 1.2vw;
+    }
+    
+    progress{
+        width:30%;
     }
     
     button{
