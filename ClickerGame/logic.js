@@ -29,9 +29,13 @@ function poke(){
         playingBGM = true;
     }
     document.getElementById("target").style.display = "inline";
-    var count = document.getElementById("counter").innerHTML;
     sfx.play();
     sfx.currentTime=0;
+}
+
+function nope(){
+    document.getElementById("target").style.display = "none";
+    var count = document.getElementById("counter").innerHTML;
     count++;
     document.getElementById("counter").innerHTML = count; 
     var hapVal = document.getElementById("happy").value;
@@ -40,10 +44,6 @@ function poke(){
     if (hapVal == 100){
 	    alert("Maximum happiness achieved!");
     }
-}
-
-function nope(){
-    document.getElementById("target").style.display = "none";
 }
 
 (function() {
