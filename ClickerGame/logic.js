@@ -13,22 +13,12 @@ var playingBGM = false;
 //Keyboard input (using spacebar)
 document.onkeydown = function (e) {
     if (e.code == "Space"){
-	if (playingBGM == false){
-	    bgm.play();
-	    bgm.loop = true;
-	    playingBGM = true;
-	}
-        document.getElementById("target").style.display = "inline";
-        sfx.play();
-        sfx.currentTime=0;
+	poke();
     }
 };
 document.onkeyup = function (e) {
     if (e.code == "Space"){
-        document.getElementById("target").style.display = "none";
-	var count = document.getElementById("counter").innerHTML;
-        count++;
-        document.getElementById("counter").innerHTML = count; 
+        nope();
     }
 };
 
@@ -44,7 +34,12 @@ function poke(){
     sfx.currentTime=0;
     count++;
     document.getElementById("counter").innerHTML = count; 
-    
+    var hapVal = document.getElementById("happy").value;
+    hapVal++;
+    document.getElementById("happy").value = hapVal;
+    if (hapVal == 100){
+	    alert("Maximum happiness achieved!");
+    }
 }
 
 function nope(){
