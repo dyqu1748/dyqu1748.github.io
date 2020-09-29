@@ -1,4 +1,5 @@
 /* https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/ */
+/* https://stackoverflow.com/questions/59732074/disable-double-tap-zoom-on-safari-ios-13 */
 
 body{
     background-color: rgb(156, 223, 250);
