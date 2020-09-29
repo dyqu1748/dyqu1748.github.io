@@ -2,6 +2,7 @@
 // https://stackoverflow.com/questions/12953928/immediate-play-sound-on-button-click-in-html-page
 // http://www.iandevlin.com/blog/2014/01/javascript/using-the-web-speech-api-to-control-a-html5-video/
 //https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition
+//https://stackoverflow.com/questions/22559830/html-prevent-space-bar-from-scrolling-page
 
 //Sound effect to play
 var sfx =  document.getElementById("myAudio");
