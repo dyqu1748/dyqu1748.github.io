@@ -11,6 +11,8 @@ var startListen = document.getElementById('startListen');
 var startListenMob = document.getElementById('startListenMob');
 var playingBGM = false;
 
+sfx.volume=0.5;
+bgm.volume=0.5;
 //Keyboard input (using spacebar)
 document.onkeydown = function (e) {
     if (e.code == "Space"){
@@ -82,6 +84,8 @@ function nope(){
     // Start speech recognition, for some reason if I put start in the function above the sound effect doesn't play.
     var startPoke= function() {
         rec.start();
+    	sfx.volume = 0.2;
+        bgm.volume = 0.2;
         document.getElementById("listening").innerHTML = 'Now poking with voice!';
     }
     
