@@ -11,8 +11,8 @@ var startListen = document.getElementById('startListen');
 var startListenMob = document.getElementById('startListenMob');
 var playingBGM = false;
 
-sfx.volume=0.3;
-bgm.volume=0.3;
+sfx.volume=0.0;
+bgm.volume=0.0;
 //Keyboard input (using spacebar)
 document.onkeydown = function (e) {
     if (e.code == "Space"){
