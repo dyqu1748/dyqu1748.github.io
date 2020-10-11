@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div>
+			<h2>Selected Input Method:<h2 id = "inputMethod">None</h2></h2>
+			<h2 id="scanMode"></h2>
+			<a href="#" onclick="inputType(5)">5-Button Input</a>
+			<a href="#" onclick="inputType(3)">3-Button Input</a>
+			<a href="#" onclick="inputType(1)">1-Button Input</a>
+		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<p>This is 5-button calculator. The user is able to navigate and interact with the calculator using only 5 buttons on their keyboard. Users will be able to navigate up, down, left, and right through the calculator and select highlighted buttons.</p>
+			<ul>
+				<li>Instructions for using the app:</li>
+				<ul>
+					<li>5-Button Controls:</li>
+					<ul>
+						<li>W key: Moves highlighted button up on the calculator.</li>
+						<li>S key: Moves highlighted button down on the calculator.</li>
+						<li>A key: Moves highlighted button left on the calculator.</li>
+						<li>D key: Moves highlighted button right in the calculator.</li>
+						<li>Spacebar: Select the highlighted button.</li>
+					</ul>
+					<li>3-Button Controls:</li>
+					<ul>
+						<li>S key: Moves highlighted button down on the calculator.</li>
+						<li>D key: Moves highlighted button right in the calculator.</li>
+						<li>Spacebar: Select the highlighted button.</li>
+					</ul>
+					<li>1-Button Controls:</li>
+					<ul>
+						<li>Spacebar: Select the highlighted row when in row scanning mode (only far left button will be highlighted). Select the highlighted button when in column scanning mode.</li>
+						<li>When 1-Button Control is selected, row scanning will begin in 3 seconds.</li>
+						<li>You have 3 seconds on each row to decide if you want to scan the columns of that row.</li>
+						<li>When in column scanning, you have 3 seconds on each button to decide if you want to select it.</li>
+						<li>Column scanning will loop through the selected row two times before returning to row scanning.</li>
+					</ul>
+					<li>NOTE: For the 3 and 1-button input methods, the SelectNext() method will not wrap around to the next row. It will instead wrap around to the beginning of the current row. This was to allow users to get buttons that they already past without having to go through all of the rows again.</li>
+					<li>NOTE: For the 1-button input method, the row scanning will always highlight the far left button of the row. This was to create consistency with the row scanning (user can expect the far left button to become highlighted when row scanning restarts).</li>
+				</ul>
+				<br>
+				<li>Test Information:</li>
+				<ul>
+					<li>Test Subject: Dylan Quach</li>
+					<li>Compare the equation completion time of the 5-button input method to the 3-button input method.</li>
+					<li>Equations Calculated:</li>
+					<ol>
+						<li>113+75-62</li>
+						<li>16-34+71</li>
+						<li>15*7/6</li>
+						<li>28*5/9</li>
+						<li>10+8-16*5/3</li>
+						<li>76-52+16*10/5</li>
+					</ol>
+					<li>NOTE: Recorded times will be a bit larger than the actual completion time. This is due to the fact that I had to both perform the test and start/stop the stopwatch.</li>
+				</ul>
+				<br>
+				<li>Test Results:</li>
+				<ul>
+					<li>No errors were recorded (no incorrect number inputs by the user, however they did sometimes overshoot the desired button and had to move back).</li>
+					<li>5-Button Input Completion Times (seconds):</li>
+					<ol>
+						<li>17.76, 16.85, 16.33; Avg = 16.98</li>
+						<li>15.65, 15.12, 14.87; Avg = 15.213</li>
+						<li>9.50, 9.33, 9.12; Avg = 9.3167</li>
+						<li>10.70, 10.45, 9.94; Avg = 10.3633</li>
+						<li>15.54, 15.11, 14.86; Avg = 15.17</li>
+						<li>19.87, 19.65, 19.36; Avg = 19.6267</li>
+					</ol>
+					<li>Average Total Completion Time: 86.6697</li>
+					<br>
+					<li>3-Button Input Completion Times (seconds):</li>
+					<ol>
+						<li>20.61, 20.46, 20.32; Avg = 20.4633</li>
+						<li>18.95, 18.75, 18.39; Avg = 18.6967</li>
+						<li>12.93, 12.75, 12.43; Avg = 12.7033</li>
+						<li>15.46, 15.25, 14.98; Avg = 15.23</li>
+						<li>21.50, 21.28, 20.88; Avg = 21.22</li>
+						<li>28.77, 28.55, 28.03; Avg = 28.45</li>
+					</ol>
+					<li>Average Total Completion Time: 116.7633</li>
+					<br>
+					<li>Summary of Results:</li>
+					<ul>
+						<li>For both input methods, completion time decreased (became faster) after each trial. This means that it is possible for users to become faster and more efficient with the input methods as they continue to use them.</li>
+						<li>Average completion time for all equations is larger (took longer) with the 3-button input method.</li>
+						<li>Average total completion time is about 30 seconds faster with the 5-button input method.</li>
+						<li>Conclusion: 5-button input method is the faster input method. However, with practice 3-button users can bring their completion times closer to the completion times of 5-button users.</li>
+					</ul>
+				</ul>
+				<br>
+				<li>Additional Test That I Performed:</li>
+				<ul>
+					<li>I performed the same test above for the 1-button input. Here are the results for just 1 run.</li>
+					<li>1-Button Input Completion Times (minutes):</li>
+					<ul>
+						<li>2:49.71</li>
+						<li>3:54.49</li>
+						<li>2:07.23</li>
+						<li>2:07.57</li>
+						<li>4:28.36</li>
+						<li>4:57.41</li>
+					</ul>
+					<li>As you can see, it takes significantly longer to complete the equations. This can be improved by shortening the time you stay on a button/row.</li>
+				</ul>
+			</ul>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
